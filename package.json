@@ -1,0 +1,25 @@
+{
+  "name": "dockermon",
+  "version": "1.0.0",
+  "description": "dockermon =========",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twistedogic/dockermon"
+  },
+  "author": "Jordan Li",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/twistedogic/dockermon/issues"
+  },
+  "homepage": "https://github.com/twistedogic/dockermon",
+  "dependencies": {
+    "dockerode": "^2.0.4",
+    "elasticsearch": "^3.0.0",
+    "node-hipchat": "^0.4.5",
+    "redis": "^0.12.1"
+  }
+}

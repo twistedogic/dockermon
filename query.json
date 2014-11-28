@@ -1,0 +1,35 @@
+{
+  "query": {
+    "filtered": {
+      "query": {
+        "bool": {
+          "should": [
+            {
+              "query_string": {
+                "query": "message:*Error"
+              }
+            }
+          ]
+        }
+      },
+      "filter": {
+        "bool": {
+          "must": [
+            {
+              "match_all": {}
+            }
+          ]
+        }
+      }
+    }
+  },
+  "size": 3,
+  "sort": [
+    {
+      "@timestamp": {
+        "order": "desc",
+        "ignore_unmapped": true
+      }
+    }
+  ]
+}
