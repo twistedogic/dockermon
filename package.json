@@ -20,6 +20,7 @@
     "dockerode": "^2.0.4",
     "elasticsearch": "^3.0.0",
     "node-hipchat": "^0.4.5",
-    "redis": "^0.12.1"
+    "redis": "^0.12.1",
+    "request": "^2.48.0"
   }
 }
