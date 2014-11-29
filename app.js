@@ -55,11 +55,6 @@ client.search({
     	           });
             });
             redisclient.set(hits._id,1);
-            redisclient.keys('*',function(err,response){
-                response.forEach(function(keyName){
-                    redisclient.del(keyName);
-                });
-            });
           }
       })
     
